@@ -2,7 +2,6 @@
 
 import { ChatBubble } from './chat-bubble';
 import { StartupList } from './startup-list';
-import { Button } from '@/components/ui/button'; // Keeping for potential future use or lint consistency for now
 import Link from 'next/link';
 import { useState, useEffect, useLayoutEffect } from 'react';
 

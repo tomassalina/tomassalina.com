@@ -89,7 +89,7 @@ export function ChatLayout() {
                 <div className="">
                   <span className="mr-2">You can find me on</span>
                   <Link
-                    href="https://twitter.com/tomassalina"
+                    href="https://twitter.com/salinatomass"
                     target="_blank"
                     className="text-blue-500 hover:underline hover:text-blue-400 transition-colors"
                   >

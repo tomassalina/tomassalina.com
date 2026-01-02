@@ -25,13 +25,13 @@ export function ChatBubble({
     ? {
         initial: { opacity: 0, y: 20 },
         whileInView: { opacity: 1, y: 0 },
-        viewport: { once: true, amount: 0.1 }, // Trigger as soon as 10% is visible
-        transition: { duration: 0.5, delay, ease: 'easeOut' },
+        viewport: { once: true, amount: 0.1 },
+        transition: { duration: 0.5, delay, ease: 'easeOut' as const },
       }
     : {
         initial: { opacity: 0, y: 10 },
         animate: { opacity: 1, y: 0 },
-        transition: { duration: 0.3, delay, ease: 'easeOut' },
+        transition: { duration: 0.3, delay, ease: 'easeOut' as const },
       };
 
   return (

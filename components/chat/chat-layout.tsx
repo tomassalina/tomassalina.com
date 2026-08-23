@@ -89,31 +89,51 @@ export function ChatLayout() {
                 <div className="">
                   <span className="mr-2">You can find me on</span>
                   <Link
+                    href="https://www.linkedin.com/in/tomassalina"
+                    target="_blank"
+                    className="text-blue-500 hover:underline hover:text-blue-400 transition-colors"
+                  >
+                    LinkedIn
+                  </Link>
+                  <span className="mx-1.5 text-gray-500">or</span>
+                  <Link
                     href="https://twitter.com/salinatomass"
                     target="_blank"
                     className="text-blue-500 hover:underline hover:text-blue-400 transition-colors"
                   >
                     X (Twitter)
                   </Link>
-                  <span className="mx-1.5 text-gray-500">or</span>
-                  <Link
-                    href="https://github.com/tomassalina"
-                    target="_blank"
-                    className="text-blue-500 hover:underline hover:text-blue-400 transition-colors"
-                  >
-                    GitHub
-                  </Link>
                   .
                 </div>
               }
             />
 
-            <ChatBubble content="Have a good week" withScroll={true} delay={0.4} />
+            <ChatBubble
+              withScroll={true}
+              delay={0.3}
+              content={
+                <div className="">
+                  <span className="mr-2">Or you could write to me at</span>
+                  <Link
+                    href="mailto:me@tomassalina.com"
+                    className="text-blue-500 hover:underline hover:text-blue-400 transition-colors"
+                  >
+                    me@tomassalina.com
+                  </Link>
+                </div>
+              }
+            />
 
-            <ChatBubble content="~ T." withScroll={true} delay={0.6} />
+            <ChatBubble content="Have a good week" withScroll={true} delay={0.5} />
+
+            <ChatBubble content="~ T." withScroll={true} delay={0.7} />
           </>
         )}
       </div>
+
+      <footer className="w-full text-center text-xs text-gray-500 pb-4">
+        &copy; {new Date().getFullYear()} Tomas Ezequiel Salina. All rights reserved.
+      </footer>
     </div>
   );
 }

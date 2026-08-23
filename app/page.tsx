@@ -19,11 +19,7 @@ const jsonLd = {
     { '@type': 'Organization', name: 'Slice', url: 'https://www.slicehub.xyz' },
     { '@type': 'Organization', name: 'Koopay', url: 'https://www.koopay.io' },
   ],
-  sameAs: [
-    'https://x.com/salinatomass',
-    'https://github.com/tomassalina',
-    'https://linkedin.com/in/tomassalina',
-  ],
+  sameAs: ['https://x.com/salinatomass', 'https://www.linkedin.com/in/tomassalina'],
 };
 
 export default function Home() {
